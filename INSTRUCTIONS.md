@@ -5,11 +5,12 @@ First, start the database. On the project root folder run:
 ```shell
 docker-compose up
 ```
+To stop it, press CTRL+C
 
-Then, start the server
+Then, on another terminal start the server
 
 ```shell
-npm start
+npm install && npm start
 ```
 
 # Access the database
