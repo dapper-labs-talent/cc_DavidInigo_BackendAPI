@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS users (
+  id BIGSERIAL PRIMARY KEY,
+  email VARCHAR(500) NOT NULL,
+  password VARCHAR(1000) NOT NULL,
+  "firstName" VARCHAR(200) NOT NULL,
+  "lastName" VARCHAR(200) NOT NULL
+
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS users_email_idx ON users (email);

@@ -1,0 +1,33 @@
+{
+  "name": "dapperapi",
+  "version": "1.0.0",
+  "description": "The focus of this assignment is to see how you would set up an API specifically for a web application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "PGUSER=postgres PGPASSWORD=postgrespw PGDATABASE=dapper JWT_SECRET=top_secret TOKEN_EXP_TIME=1h node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dapper-labs-talent/cc_DavidInigo_BackendAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dapper-labs-talent/cc_DavidInigo_BackendAPI/issues"
+  },
+  "homepage": "https://github.com/dapper-labs-talent/cc_DavidInigo_BackendAPI#readme",
+  "dependencies": {
+    "bcrypt": "5.0.1",
+    "body-parser": "1.20.0",
+    "express": "4.18.1",
+    "express-validator": "6.14.2",
+    "jsonwebtoken": "8.5.1",
+    "passport": "0.6.0",
+    "passport-jwt": "4.0.0",
+    "passport-local": "1.0.0",
+    "pg": "8.7.3",
+    "postgres-migrations": "5.3.0"
+  }
+}
